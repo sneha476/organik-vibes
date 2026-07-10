@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrganiK Vibes</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family:Arial, sans-serif;
+       margin:0; padding:0; 
+      }
+    header{
+       background:#2e7d32;
+      padding:15px;
+      text-align:center;
+    }
+    header nav a {
+      color:white;
+      margin:0 15px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    .hero {
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-img {
+  width: 100%;
+  max-height: 660px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.hero-text h2 {
+  color: #2e7d32;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background: #2e7d32;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.cta-btn.secondary {
+  background: #ff9800;
+}
+
+    .section{
+      padding:50px 20px;
+      text-align:center;
+    }
+    .grid{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+    .card{
+      background:white;
+      border:1px solid #ddd;
+      border-radius:8px;
+      padding:20px; 
+      width:250px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    }
+    .brand-story {
+  background: #f9f9f9;       /* light background for contrast */
+  padding: 50px 30px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: left;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #444;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.brand-story h2 {
+  text-align: center;
+  color: #2e7d32;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.brand-story strong {
+  color: #2e7d32;
+  font-size: 18px;
+}
+
+.brand-story a {
+  color: #ff9800;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.brand-story a:hover {
+  text-decoration: underline;
+}
+
+   .footer {
+  background: #556b2f; /* olive green */
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #ffeb3b;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.search-bar {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+.review {
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+  color: #ffeb3b;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+    .whatsapp-btn{
+      position:fixed;
+      bottom:20px; 
+      right:20px;
+      background:#25D366; 
+      color:white; 
+      padding:15px; 
+      border-radius:50%; 
+      font-size:24px; 
+      text-decoration:none; 
+      }
+    .language-toggle {
+      position:fixed;
+      top:20px; right:20px; 
+    }
+    .trust-badge {
+      font-size:18px;
+      color:#2e7d32;
+      font-weight:bold;
+    }
+  </style>
+</head>
+<body>
+  <p style="background-color:#2e7d32;color:white; font-weight:bold;padding:8px;text-align:center;">Free Shipping on orders above₹1000</p>
+  <header>
+    <nav>
+      <a href="vegetables.html">vegetables</a>
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="categories.html">Categories</a>
+      <a href="blog.html">Blogs</a>
+      <a href="about.html">About</a>&nbsp;&nbsp;
+      <a href="contact.html">Contact</a>
+    </nav>
+    <br>
+    <input type="text" placeholder="Search products.." style="padding:6px; width:200px;">
+  </header>
+ <section class="hero">
+  <img src="WhatsApp Image 2026-07-08 at 10.38.18 AM.jpeg" alt="Hero Banner" class="hero-img">
+
+  <div class="hero-text">
+    <h2>Welcome to Organik Vibes</h2>
+    <p>Pure, organic, and sustainable products for a healthier lifestyle.</p>
+    <button class="cta-btn">Shop Now</button>
+    <button class="cta-btn secondary">Subscribe</button>
+  </div>
+</section>
+  <section class="section">
+    <h2>Best Sellers</h2>
+    <div class="grid">
+      <div class="card"><img src="https://nutriorg.com/cdn/shop/files/1_9c868707-f202-4802-9f87-8a7b185aba64.jpg?v=1781353435&width=320" width="200">
+        <h3>Aloe Vera Juice</h3>
+        <p>₹299.00</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card"><img src="https://nutriorg.com/cdn/shop/files/71I3bj7pwKL._SX679.jpg?v=1752149153&width=320" width="200">
+        <h3>Organic Honey</h3>
+        <p>₹399.00</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="card"><img src="https://nutriorg.com/cdn/shop/files/Artboard1_27_f808445a-d740-4775-bac2-a1881004b4fd.jpg?v=1768995497&width=320" width="200">
+        <h3>Wheatgrass Powder</h3>
+        <p>₹210.00</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Subscribe&Save</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Monthly Box</h3>
+        <p>Fresh products delivered monthly</p>
+        <button>Subscribe</button>
+      </div>
+      <div class="card">
+        <h3>Quarterly Box</h3>
+        <p>Seasonal organic goodness</p>
+        <button>Subscribe</button></div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Why Choose Us</h2>
+    <div class="grid">
+      <div class="card trust-badge">✔ 100% Organic</div>
+      <div class="card trust-badge">✔ Certified Quality</div>
+      <div class="card trust-badge">✔ Trusted by 10,000+customers</div>
+    </div>
+  </section>
+ <section class="section">
+  <h2>What Our Customers Say</h2>
+  <div class="grid">
+  
+    <div class="card">
+      <p>"Organik Vibes changed my lifestyle!"- Sravani</p>
+    </div>
+    <div class="card">
+      <p>"Best organic products I've ever tried."-Rahul</p>
+    </div>
+  </div>
+
+  <div class="brand-story" style="margin-top:40px; text-align:center;">
+    <p><strong>Organic Vegetables, Fruits, Staples</strong><br>
+    100% trusted organic vegetables, fruits, grains, millets, oils</p>
+
+    <p>Proudly produced in our own certified farms. Order online, we deliver organic food in Hyderabad.</p>
+
+    <p><strong>🚜 We produce for you</strong></p>
+    <p>Were you proud farmers, maybe until a generation back?  
+    We still are, and happily grow crops in our own organic certified farms hygienically & sustainably, for you to relish.  
+    Our family farms are managed by M.Sc.(Ag) & B.Sc.(Ag) experts, who you can rely on to produce the right way.</p>
+
+    <p><strong>🛒 Order online or call</strong><br>
+    Order online or call <a href="tel:99xxxxxxx">99xxxxx</a>we deliver in Hyderabad.  
+    Order what you see in stock now, and create an account to be notified at harvests. Trusted by 3000+ families.</p>
+  </div>
+</section>
+
+  <a href="https://wa.me/xxxxxxxx" class="whatsapp-btn">✆</a>
+  <div class="language-toggle">
+    <select onchange="alert('Language switched to: ' + this.value)">
+      <option value="en">English</option>
+      <option value="hi">हिंदी</option>
+      <option value="te">తెలుగు</option>
+    </select>
+  </div>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Reviews</h3>
+      <div class="review">
+        <p>⭐️⭐️⭐️⭐️⭐️ "Organik Vibes changed my lifestyle!"-Sravani</p>
+      </div>
+      <div class="review">
+        <p>⭐️⭐️⭐️⭐️⭐️ "Best organic products I've ever tried."-Rahul</p>
+      </div>
+      <div class="review">
+        <p>⭐️⭐️⭐️⭐️⭐️ "Fresh, healthy, and delivered on time!"-Priya</p>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Key Info</h3>
+      <ul>
+        <li><a href="about.html">About Organik Vibes</a></li>
+        <li><a href="#how to order">How to Order & FAQ</a></li>
+        <li><a href="# delivery">Organic Food Delivery</a></li>
+        <li><a href="#review">Customer Reviews</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#term">Terms & Privacy Policy</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <input type="text" placeholder="Site Search" class="search-bar">
+    </div>
+    <div class="footer-column">
+      <h3>Blog Posts</h3>
+      <ul>
+        <li><a href="#">Best Leafy Vegetables: 3 Reasons to Rejoice</a></li>
+        <li><a href="#">6 Questions to Ask Your Organic Store</a></li>
+        <li><a href="#">Can I Afford Organic Vegetables?</a></li>
+      </ul>
+      <h3>Blog Archive</h3>
+      <ul>
+        <li><a href="#">May 2026 (1)</a></li>
+        <li><a href="#">April 2026 (2)</a></li>
+        <li><a href="#">December 2025 (1)</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Organik Vibes</h3>
+      <p>Organic Vegetables, Fruits, Staples grown in our own farms, delivered in Hyderabad.</p>
+      <p>Email: <a href="mailto:info@organikvibes.com">info@organikvibes.com</a></p>
+      <p>Phone/WhatsApp: <a href="tel:9908003300">9908003300</a></p>
+      <p>Farm Locations:<br> Hyderabad, Telangana</p>
+      <div class="social-icons">
+        <a href="#">YouTube</a> | <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">X</a> | <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Organik Vibes | Certified Organic</p>
+  </div>
+</footer>
+
+</body>
+</html>

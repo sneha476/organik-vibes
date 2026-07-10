@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #182c01;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      width: 350px;
+      text-align: center;
+    }
+    .box h2 {
+      color: #09665a;
+      margin-bottom: 20px;
+    }
+    .box label {
+      display: block;
+      text-align: left;
+      margin: 10px 0 5px;
+      font-weight: bold;
+      color: #333;
+    }
+    .box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .box button {
+      width: 100%;
+      padding: 12px;
+      background: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .box button:hover {
+      background: #1b5e20;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h2>Create Your Account</h2>
+    <form onsubmit="return signupUser()">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" 
+             pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" 
+             placeholder="Enter password" required>
+
+      <label for="confirm">Confirm Password:</label>
+      <input type="password" id="confirm" placeholder="Re-enter password" required>
+
+      <button type="submit">Sign Up</button>
+      <p>Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+
+  <script>
+    function signupUser() {
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let password = document.getElementById("password").value;
+      let confirm = document.getElementById("confirm").value;
+
+      if(password !== confirm) {
+        alert("Passwords do not match!");
+        return false;
+      }
+
+      // Save user info
+      localStorage.setItem("userName", name);
+      localStorage.setItem("userEmail", email);
+      localStorage.setItem("userPassword", password);
+
+      alert("Signup successful! Please login.");
+      window.location.href = "login.html";
+      return false;
+    }
+  </script>
+</body>
+</html>

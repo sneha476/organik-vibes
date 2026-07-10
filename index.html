@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nutri.Organics</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+.slider {
+  width:1000px;
+  height:500px;
+  overflow:hidden;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.slides {
+  display: flex;
+  width: 3000px; 
+  animation: slide 12s infinite;
+}
+
+.slides img {
+  width: 1000px;
+  height: 500px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  30%  { transform: translateX(0); }
+  35%  { transform: translateX(-1000px); }
+  65%  { transform: translateX(-1000px); }
+  70%  { transform: translateX(-2000px); }
+  100% { transform: translateX(-2000px); }
+}
+
+    .footer {
+      background: #556b2f;
+      color: white;
+      padding: 40px 20px;
+    }
+    .footer-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .footer-column {
+      flex: 1;
+      min-width: 220px;
+    }
+    .footer-column h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #ffeb3b;
+    }
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+    .footer-column ul li {
+      margin-bottom: 8px;
+    }
+    .footer-column a {
+      color: white;
+      text-decoration: none;
+    }
+    .footer-column a:hover {
+      text-decoration: underline;
+    }
+    .search-bar {
+      margin-top: 10px;
+      padding: 8px;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+    }
+    .review {
+      background: rgba(255,255,255,0.1);
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .social-icons a {
+      margin: 0 5px;
+      color: #ffeb3b;
+    }
+    .footer-bottom {
+      text-align: center;
+      margin-top: 30px;
+      border-top: 1px solid rgba(255,255,255,0.3);
+      padding-top: 15px;
+      font-size: 14px;
+    }
+  </style>
+  <script>
+    
+    if(localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      window.location.href = "login.html";
+    }
+  </script>
+</head>
+<body>
+  <p style="background-color:#2e7d32; color:white;font-weight:bold;padding:8px; text-align:center;">
+    Free Shipping on orders above ₹1000
+  </p>
+
+  <header>
+    <nav>
+      <a href="home.html">Home</a>&nbsp;&nbsp;
+       <a href="vegetables.html">Vegetables</a>&nbsp;&nbsp;
+      <a href="shop.html">Shop</a>&nbsp;&nbsp;
+      <a href="categories.html">Categories</a>&nbsp;&nbsp;
+      <a href="blog.html">Blogs</a>&nbsp;&nbsp;
+      <a href="about.html">about</a>&nbsp;&nbsp;
+      <a href="contact.html">Contact</a>&nbsp;&nbsp;
+      <button onclick="logout()">Logout</button>
+    </nav><br>
+    <div class="slider">
+  <div class="slides">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqHesswFzBpmljR0Qb-AFnGSS9HrPetRnKKM21ZnIFAw&s=10" alt="Banner 1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE3fZQreNd9xICGes61b76u8hPn3o1AXwGKd2neYtSJA&s=10" alt="Banner 2">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCl0zgBUbQmOokfwe4o_waSyOG2Yc_W9GJtwhtBAbJkg&s=10" alt="Banner 3">
+  </div>
+</div>
+
+
+  <section id="hero">
+    <center><h2>No chemicals. No shortcuts. 100% Organic.</h2></center><br>
+  </section>
+
+ <center>
+  <section id="categories">
+    <h3>Skin & Hair</h3>
+    <table border="0" cellpadding="20" cellspacing="0" background-color="darkgreen">
+      <tr>
+        <td>
+          <b>Extra Virgin Coconut Oil</b><br>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzNlmaQrkbayA9-xGafgmKDffaS8eOSQAO_-1uOIqoZQ&s=10" alt="Flaxseed Oil" width="100" height="200"><br>
+          <button>Shop Now</button>
+        </td>
+        <td>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyRy-RG0z_cHP69XAsujmlSQiQSiZls9KAnuVXQqB4xg&s=10" alt="Flaxseed Oil" width="100" height="200"><br>
+          <b>Flaxseed Oil</b><br>
+          <button>Shop Now</button>
+        </td>
+        <td>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrSR_NkFzfF5hVKa_PHJJBETgtbgwclkp9E-vwOtuUaw&s=10" alt="Blackseed Oil" width="100" height="200"><br>
+          <b>Blackseed Oil</b><br>
+          <button>Shop Now</button>
+        </td>
+        <td>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqlbD6WZ_9GLQA9xp0B9GBplUFtRMBHEYGDrXpAw-67Q&s=10" alt="Organic Rose Water" width="100" height="200"><br>
+          <b>Organic Rose Water</b><br>
+          <button>Shop Now</button>
+        </td>
+        <td>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSemK7A5oKYpsc2vX0e_Ls32GiuKdt74MNWow_OfB8XNQ&s=10" alt="Castor Oils" width="100" height="200"><br>
+          <b>Castor Oils</b><br>
+          <button>Shop Now</button>
+        </td>
+      </tr>
+    </table>
+  </section>
+  </center>
+
+  <section id="reels">
+    <center><h3>Watch & Shop Now</h3></center>
+    <table border="0" cellpadding="15" cellspacing="0" align="center">
+      <tr>
+        <td>
+          <h4>Nutriorg Stall</h4>
+          <div class="circle-video">
+            <video width="200" height="200" controls>
+              <source src="main (3).mp4" type="video/mp4">
+            </video>
+          </div>
+          <p>Best Tea for Wellness</p>
+          <button>Watch Now</button>
+        </td>
+        <td>
+          <h4>Healthy Breakfast</h4>
+          <div class="circle-video">
+            <video width="200" height="200" controls>
+              <source src="main.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p>Grow & Glow</p>
+          <button>Buy Now</button>
+        </td>
+      </tr>
+    </table>
+  </section><br>
+
+
+  <section>
+    <table border="0" cellpadding="20" cellspacing="0" align="center">
+      <tr>
+        <td>
+          <h3>Get Free Consultation!!</h3>
+          <p>Connect with our Dietitian for a free consultation.</p>
+          <p>Fill out this form and book a free appointment now!</p>
+          <center><button>Click here</button></center>
+        </td>
+        <td>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdUxSxBIq70AWOQfwlLqk8_uRD29OsBf58k7IirFYApg&s=10" alt="Dietitian" width="150" height="250">
+        </td>
+      </tr>
+    </table>
+  </section>
+
+  <table border="0" cellpadding="20" cellspacing="0" align="center">
+  <tr>
+    <td>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqFP4izBPMgcqtXdDbmK3GvH8eYqYeXX1pVFQ2dZOslA&s=10" alt="Apple Cider Vinegar" width="200" height="200">
+    </td>
+    <td>
+      <iframe src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAZzEJx599jadfKu8rNSeZBZU91bU8Q4OtAdkpu67Uyw&s=10" width="300" height="200" frameborder="0" allowfullscreen></iframe>
+    </td>
+  </tr>
+</table>
+ <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Reviews</h3>
+      <div class="review">
+        <p>⭐️⭐️⭐️⭐️⭐️ "Organik Vibes changed my lifestyle!"-Sravani</p>
+      </div>
+      <div class="review">
+        <p>⭐️⭐️⭐️⭐️⭐️ "Best organic products I've ever tried."-Rahul</p>
+      </div>
+      <div class="review">
+        <p>⭐️⭐️⭐️⭐️⭐️ "Fresh, healthy, and delivered on time!"-Priya</p>
+      </div>
+    </div>
+    <div class="footer-column">
+      <h3>Key Info</h3>
+      <ul>
+        <li><a href="about.html">About Organik Vibes</a></li>
+        <li><a href="#how to order">How to Order & FAQ</a></li>
+        <li><a href="# delivery">Organic Food Delivery</a></li>
+        <li><a href="#review">Customer Reviews</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#term">Terms & Privacy Policy</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <input type="text" placeholder="Site Search" class="search-bar">
+    </div>
+    <div class="footer-column">
+      <h3>Blog Posts</h3>
+      <ul>
+        <li><a href="#">Best Leafy Vegetables: 3 Reasons to Rejoice</a></li>
+        <li><a href="#">6 Questions to Ask Your Organic Store</a></li>
+        <li><a href="#">Can I Afford Organic Vegetables?</a></li>
+      </ul>
+      <h3>Blog Archive</h3>
+      <ul>
+        <li><a href="#">May 2026 (1)</a></li>
+        <li><a href="#">April 2026 (2)</a></li>
+        <li><a href="#">December 2025 (1)</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Organik Vibes</h3>
+      <p>Organic Vegetables, Fruits, Staples grown in our own farms, delivered in Hyderabad.</p>
+      <p>Email: <a href="mailto:info@organikvibes.com">info@organikvibes.com</a></p>
+      <p>Phone/WhatsApp: <a href="tel:99xxxxxx">99xxxxxx</a></p>
+      <p>Farm Locations:<br> Hyderabad, Telangana</p>
+      <div class="social-icons">
+        <a href="#">▶️</a><a href="#">🅾</a><a href="#">ⓕ</a><a href="#">𝕏</a><a href="#">🇮🇳</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Organik Vibes | Certified Organic</p>
+  </div>
+</footer>
+</body>
+</html>

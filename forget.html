@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Password</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #182c01;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .box{
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+            text-align: center;
+        }
+        box h2{
+            color: #09665a;
+            margin-bottom: 20px;
+        }
+        box label{
+            display: block;
+            text-align: left;
+            margin:10px 0 5px;
+            font-weight: bold;
+            color:#333;
+        }
+        box input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+        }
+       .box button {
+      width: 50%;
+      padding: 12px;
+      background: #2e7d32;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    box button:hover {
+      background: #1b5e20;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Forget PassWord</h2>
+        <form type="return verify email()">
+            <label type="email">Email:</label>
+            <input type="email" pattern="(?=.*[a-z])(?=.*[0-9]).+@.+\..+" placeholder="Enter Email" required><br><br>
+            <button type="submit">verify</button>
+        </form>
+    </div>
+</body>
+</html>
